@@ -19,15 +19,15 @@
         <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-6"
              style="background:rgba(184,134,11,0.2); color:#d4a41f; border:1px solid rgba(184,134,11,0.4);">
             <i class="ph-fill ph-star"></i>
-            Perpustakaan Digital Terpercaya
+            Perpustakaan Digital
         </div>
         <h1 class="font-display text-4xl md:text-5xl font-bold leading-tight mb-5"
             style="color:#faf8f4;">
-            Temukan Dunia Baru<br>
-            <span style="color:#b8860b;">Dalam Setiap Halaman</span>
+            Kamu Mau Baca <br>
+            <span style="color:#b8860b;">Apa Nyakk</span>
         </h1>
         <p class="text-base leading-relaxed mb-8 max-w-lg" style="color:#c8bfaf;">
-            Akses ribuan koleksi buku pilihan dari berbagai kategori. Pinjam, baca, dan kembalikan dengan mudah.
+            Baca Buku Pokee
         </p>
         <div class="flex flex-wrap gap-3">
             @guest
@@ -118,7 +118,7 @@
 
     {{-- Book Grid --}}
     @if($buku->count())
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
             @foreach($buku as $item)
                 <x-book-card :buku="$item" />
             @endforeach

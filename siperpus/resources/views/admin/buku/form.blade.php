@@ -17,7 +17,7 @@
         <p class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:#b8860b; letter-spacing:0.12em;">
             {{ isset($buku) ? 'Perbarui Data' : 'Tambah Baru' }}
         </p>
-        <h1 style="font-family:'Playfair Display',serif; font-size:1.75rem; font-weight:700; color:#0f0f0f;">
+        <h1 style="font-family:'Poppins',sans-serif; font-size:1.75rem; font-weight:700; color:#0f0f0f;">
             {{ isset($buku) ? $buku->judul : 'Buku Baru' }}
         </h1>
     </div>

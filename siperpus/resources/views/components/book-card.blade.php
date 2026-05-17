@@ -6,7 +6,7 @@
          style="background:#fff; border-color:#e0d9cf;">
 
 {{-- Cover --}}
-<div class="relative h-48 overflow-hidden"
+<div class="relative aspect-[3/4] w-full overflow-hidden"
      style="background: linear-gradient(135deg, #f2ede4 0%, #e8dfd0 100%);">
 
     {{-- Jika ada gambar cover --}}

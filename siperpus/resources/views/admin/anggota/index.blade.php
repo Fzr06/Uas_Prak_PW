@@ -9,7 +9,7 @@
     <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div>
             <p class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:#b8860b; letter-spacing:0.12em;">Manajemen</p>
-            <h1 style="font-family:'Playfair Display',serif; font-size:1.75rem; font-weight:700; color:#0f0f0f; line-height:1.2;">
+            <h1 style="font-family:'Poppins',sans-serif; font-size:1.75rem; font-weight:700; color:#0f0f0f; line-height:1.2;">
                 Data Anggota
             </h1>
             <p class="text-sm mt-1" style="color:#6b6457;">{{ $anggota->total() }} anggota terdaftar</p>

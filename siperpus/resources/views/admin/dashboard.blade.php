@@ -8,37 +8,37 @@
     {{-- Header --}}
     <div>
         <p class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:#b8860b; letter-spacing:0.12em;">Selamat datang</p>
-        <h1 style="font-family:'Playfair Display',serif; font-size:1.875rem; font-weight:700; color:#0f0f0f;">
+        <h1 style="font-family:'Poppins',sans-serif; font-size:1.875rem; font-weight:700; color:#0f0f0f;">
             Dashboard Admin
         </h1>
-        <p class="text-sm mt-1" style="color:#6b6457;">{{ now()->translatedFormat('l, d F Y') }}</p>
+        <p class="text-sm mt-1" style="color:#6b6457;">{{ now()->locale('id')->translatedFormat('l, d F Y') }}</p>
     </div>
 
     {{-- Stats Grid --}}
     <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
-        <div class="rounded-xl p-5 col-span-1" style="background:#0f0f0f;">
-            <i class="ph-fill ph-books text-2xl mb-3 block" style="color:#d4a41f;"></i>
-            <p class="text-3xl font-bold mb-1" style="font-family:'Playfair Display',serif; color:#faf8f4;">{{ $totalBuku }}</p>
-            <p class="text-xs font-medium uppercase tracking-wide" style="color:#6b6457;">Total Buku</p>
+        <div class="rounded-xl p-5 col-span-1" style="background:#4A2E15;">
+            <i class="ph-fill ph-books text-2xl mb-3 block" style="color:#d5b07c;"></i>
+            <p class="text-3xl font-bold mb-1" style="font-family:'Poppins',sans-serif; color:#faf8f4;">{{ $totalBuku }}</p>
+            <p class="text-xs font-medium uppercase tracking-wide" style="color:#d5b07c;">Total Buku</p>
         </div>
         <div class="rounded-xl p-5 col-span-1" style="background:#fff; border:1px solid #e0d9cf;">
             <i class="ph-fill ph-users text-2xl mb-3 block" style="color:#b8860b;"></i>
-            <p class="text-3xl font-bold mb-1" style="font-family:'Playfair Display',serif; color:#0f0f0f;">{{ $totalAnggota }}</p>
+            <p class="text-3xl font-bold mb-1" style="font-family:'Poppins',sans-serif; color:#0f0f0f;">{{ $totalAnggota }}</p>
             <p class="text-xs font-medium uppercase tracking-wide" style="color:#6b6457;">Anggota</p>
         </div>
         <div class="rounded-xl p-5 col-span-1" style="background:#fff; border:1px solid #e0d9cf;">
             <i class="ph-fill ph-clipboard-text text-2xl mb-3 block" style="color:#b8860b;"></i>
-            <p class="text-3xl font-bold mb-1" style="font-family:'Playfair Display',serif; color:#0f0f0f;">{{ $totalPeminjaman }}</p>
+            <p class="text-3xl font-bold mb-1" style="font-family:'Poppins',sans-serif; color:#0f0f0f;">{{ $totalPeminjaman }}</p>
             <p class="text-xs font-medium uppercase tracking-wide" style="color:#6b6457;">Total Pinjam</p>
         </div>
         <div class="rounded-xl p-5 col-span-1" style="background:#fffbeb; border:1px solid #fde68a;">
             <i class="ph-fill ph-book-open text-2xl mb-3 block" style="color:#92400e;"></i>
-            <p class="text-3xl font-bold mb-1" style="font-family:'Playfair Display',serif; color:#92400e;">{{ $dipinjam }}</p>
+            <p class="text-3xl font-bold mb-1" style="font-family:'Poppins',sans-serif; color:#92400e;">{{ $dipinjam }}</p>
             <p class="text-xs font-medium uppercase tracking-wide" style="color:#92400e;">Sedang Dipinjam</p>
         </div>
         <div class="rounded-xl p-5 col-span-1" style="background:#fef2f2; border:1px solid #fca5a5;">
             <i class="ph-fill ph-warning text-2xl mb-3 block" style="color:#991b1b;"></i>
-            <p class="text-3xl font-bold mb-1" style="font-family:'Playfair Display',serif; color:#991b1b;">{{ $terlambat }}</p>
+            <p class="text-3xl font-bold mb-1" style="font-family:'Poppins',sans-serif; color:#991b1b;">{{ $terlambat }}</p>
             <p class="text-xs font-medium uppercase tracking-wide" style="color:#991b1b;">Terlambat</p>
         </div>
     </div>
@@ -82,7 +82,7 @@
     {{-- Peminjaman Terbaru --}}
     <div>
         <div class="flex items-center justify-between mb-4">
-            <h2 style="font-family:'Playfair Display',serif; font-size:1.25rem; font-weight:600; color:#0f0f0f;">
+            <h2 style="font-family:'Poppins',sans-serif; font-size:1.25rem; font-weight:600; color:#0f0f0f;">
                 Peminjaman Terbaru
             </h2>
             <a href="{{ route('admin.peminjaman.index') }}"
